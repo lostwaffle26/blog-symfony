@@ -13,8 +13,9 @@ class MainController extends AbstractController
      */
     public function index(): Response
     {
+        $articles = $this->getDoctrine()->getRepository(Articles::class)->findAll();
         return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
+            'articles' => $articles,
         ]);
     }
 }

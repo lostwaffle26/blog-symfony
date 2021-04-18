@@ -3,16 +3,6 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-
-
-<div class="example-wrapper">
-{% include "partials/navbar.html.twig" %}
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Tom/Documents/projet-blog/blog-dev-back/src/Controller/MainController.php'|file_link(0) }}">src/Controller/MainController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Tom/Documents/projet-blog/blog-dev-back/templates/main/index.html.twig'|file_link(0) }}">templates/main/index.html.twig</a></code></li>
-    </ul>
-</div>
+  
+    {% endfor %}
 {% endblock %}
