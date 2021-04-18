@@ -6,7 +6,7 @@ use App\Repository\KeyWordsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use Gedmo\Mapping\Annotation as Gedmo;
 /**
  * @ORM\Entity(repositoryClass=KeyWordsRepository::class)
  */
@@ -25,7 +25,8 @@ class KeyWords
     private $key_word;
 
     /**
-     * @ORM\Column(type="string", length=60)
+     * @Gedmo\Slug(fields={"key_word"})
+     * @ORM\Column(length=128, unique=true)
      */
     private $slug;
 
