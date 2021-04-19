@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block body %}
+
+	<style>
+		header {
+			padding: 156px 0 100px;
+		}
+
+		section {
+			padding: 150px 0;
+		}
+
+        .github{
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+
+        .iconify{
+            font-size: 30px;
+        }
+	</style>
+
+<header class="bg-dark text-white">
+    <div class="container text-center">
+      <h1>A propos du blog</h1>
+      <p class="lead">Blog créé par Tom Ruiz en 3ème année de Bachelor Informatique à Ynov.</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Comment utiliser le site</h2>
+          <p class="lead">Ce site est un blog composé de différentes fonctionnalitées.</p>
+          <ul>
+            <li>Affichage des différents articles dans la page 'blog' en cliquant sur Articles dans la navbar.</li>
+            <li>Possibilitée de créer un compte et de se connecter via le formulaire d'authentification grâce au bouton login et register dans la navbar.</li>
+            <li>Gestion des articles via la page "admin", création d'article, modification et suppression.</li>
+            <li>Grâce à la page admin nous pouvons aussi gérer les utilisateurs (leur rôle) et les catégories des articles.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Plus d'informations</h2>
+          <div class="d-flex github">
+          <p class="lead">Consulter le GitHub de ce site : <a href="https://github.com/lostwaffle26/blog-symfony" target="_blank"><span class="iconify" data-icon="logos-github-icon"  data-inline="false"></span></a> </p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+{% endblock %}
