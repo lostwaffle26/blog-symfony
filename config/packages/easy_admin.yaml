@@ -65,8 +65,10 @@ easy_admin:
               fields:
                   - id
                   - email
+                  - password
                   - { property: 'roles', label: 'Rôles', type: json_array}
           form:
               fields:
                   - email
+                  - password
                   - { property: 'roles', label: 'Rôles', type: choice, type_options: {expanded: true, multiple: true, choices: {'Utilisateur':'ROLE_USER', 'Administrateur':'ROLE_ADMIN'}}}

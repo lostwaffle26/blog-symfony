@@ -90,14 +90,14 @@
 
 		<h1 class="register-header">Register</h1>
 
-		<form class="register-container">{{ form_start(registrationForm) }}
-			<div class="email">{{ form_row(registrationForm.email) }}</div>
-			<div class="password">{{ form_row(registrationForm.plainPassword, {label: 'Password'}) }}</div>
-			<div>{{ form_row(registrationForm.agreeTerms) }}</div>
+		{{ form_start(registrationForm) }}
+		{{ form_row(registrationForm.email) }}
+		{{ form_row(registrationForm.plainPassword, {label: 'Password'}) }}
+		{{ form_row(registrationForm.agreeTerms) }}
 
-			<button type="submit" class="btn">Register</button>
-			{{ form_end(registrationForm) }}
-		</form>
+		<button type="submit" class="btn">Register</button>
+		{{ form_end(registrationForm) }}
+
 
 	</div>
 {% endblock %}
