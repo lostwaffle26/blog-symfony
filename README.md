@@ -25,7 +25,6 @@ Accès à la partie admin :
 | ------------- |
 | Email : admin@admin.com |
 | Mot de Passe : adminadmin |
-| zebra stripes |
 
  <h2>Comment utiliser le site</h2>
           <p>Ce site est un blog composé de différentes fonctionnalitées.</p>
